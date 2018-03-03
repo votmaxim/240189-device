@@ -5,8 +5,61 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-header__nav nav-main">
+        <a class="nav-main__logo">Device</a>
+        <form class="nav-main__search form-search" action="search.html" method="get">
+          <input class="form-search__input" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="form-search__btn" type="submit" name="button">Найти</button>
+        </form>
+        <ul class="user-nav">
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--personal" href="#">Войти</a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--compare" href="#">Сравнить</a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--cart" href="#">Корзина</a>
+          </li>
+        </ul>
+        <ul class="site-nav">
+          <li class="site-nav__item item-dropdown">
+            <a class="site-nav__link item-dropdown__link" href="catalog.html">Каталог</a>
+            <ul class="item-dropdown__list list-dropdown">
+              <li class="list-dropdown__item">
+                <a class="list-dropdown__link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="list-dropdown__item">
+                <a class="list-dropdown__link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="list-dropdown__item">
+                <a class="list-dropdown__link" href="#">Квадрокоптеры</a>
+              </li>
+              <li class="list-dropdown__item">
+                <a class="list-dropdown__link" href="#">Моноподы для селфи</a>
+              </li>
+              <li class="list-dropdown__item">
+                <a class="list-dropdown__link" href="#">Умные часы</a>
+              </li>
+              <li class="list-dropdown__item">
+                <a class="list-dropdown__link" href="#">Экшн камеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="delivery.html">Доставка</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="warranty.html">Гарантия</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container"></main>
+    <footer class="main-footer"></footer>
   </body>
 </html>
