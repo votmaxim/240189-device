@@ -73,6 +73,95 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!-- Здесь будет форма -->
       </section>
+      <section class="catalog-sort">
+        <h2>Сортировка:</h2>
+        <ul class="catalog-sort__list sort-by">
+          <li class="catalog-sort__item">
+            <a class="catalog-sort__link catalog-sort__link--active" href="#">По цене</a>
+          </li>
+          <li class="catalog-sort__item">
+            <a class="catalog-sort__link" href="#">По типу</a>
+          </li>
+          <li class="catalog-sort__item">
+            <a class="catalog-sort__link" href="#">По популярности</a>
+          </li>
+        </ul>
+        <ul class="catalog-sort__list order-by">
+          <li class="catalog-sort__item">
+            <a class="catalog-sort__link order-by__link--asc" href="#">По возрастанию</a>
+          </li>
+          <li class="catalog-sort__item">
+            <a class="catalog-sort__link catalog-sort__link--active order-by__link--desc" href="#">По убыванию</a>
+          </li>
+        </ul>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item item-catalog">
+            <a class="item-catalog__link" href="#">
+              <h3 class="item-catalog__title">Любительская селфи-палка</h3>
+            </a>
+            <p class="item-catalog__pic">
+              <img src="http://placehold.it/360x380" alt="Любительская селфи-палка" width="360" height="380">
+            </p>
+            <b>500 руб.</b>
+            <p class="item-catalog__controls">
+              <a class="btn" href="#">В корзину</a>
+              <a class="compare" href="#">Добавить к сравнению</a>
+            </p>
+          </li>
+          <li class="catalog__item item-catalog">
+            <a class="item-catalog__link" href="#">
+              <h3 class="item-catalog__title">Профессиональная селфи-палка</h3>
+            </a>
+            <p class="item-catalog__pic">
+              <img src="http://placehold.it/360x380" alt="Профессиональная селфи-палка" width="360" height="380">
+            </p>
+            <b>1500 руб.</b>
+            <p class="item-catalog__controls">
+              <a class="btn" href="#">В корзину</a>
+              <a class="compare" href="#">Добавить к сравнению</a>
+            </p>
+          </li>
+          <li class="catalog__item item-catalog">
+            <a class="item-catalog__link" href="#">
+              <h3 class="item-catalog__title">Непотопляемая селфи-палка</h3>
+            </a>
+            <p class="item-catalog__pic">
+              <img src="http://placehold.it/360x380" alt="Непотопляемая селфи-палка" width="360" height="380">
+            </p>
+            <b>2500 руб.</b>
+            <p class="item-catalog__controls">
+              <a class="btn" href="#">В корзину</a>
+              <a class="compare" href="#">Добавить к сравнению</a>
+            </p>
+          </li>
+          <li class="catalog__item item-catalog">
+            <a class="item-catalog__link" href="#">
+              <h3 class="item-catalog__title">Селфи-палка «Следуй за мной»</h3>
+            </a>
+            <p class="item-catalog__pic">
+              <img src="http://placehold.it/360x380" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+              <span class="item-catalog__label">New</span>
+            </p>
+            <b>4900 руб.</b>
+            <p class="item-catalog__controls">
+              <a class="btn" href="#">В корзину</a>
+              <a class="compare" href="#">Добавить к сравнению</a>
+            </p>
+          </li>
+        </ul>
+        <nav class="catalog__pagination page-nav">
+          <ul class="page-nav__list">
+            <li class="page-nav__item"><a class="page-nav__link" href="#">Назад</a></li>
+            <li class="page-nav__item"><a class="page-nav__link page-nav__link--active" href="#">1</a></li>
+            <li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
+            <li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
+            <li class="page-nav__item"><a class="page-nav__link" href="#">Вперед</a></li>
+          </ul>
+        </nav>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__top">
