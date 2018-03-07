@@ -5,13 +5,20 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="main-header">
       <nav class="main-header__nav nav-main">
+
         <a class="nav-main__logo" href="index.html">Device</a>
+
+        <!-- SEARCH -->
         <form class="nav-main__search form-search" action="https://echo.htmlacademy.ru" method="post">
           <input class="form-search__input" type="search" name="search" placeholder="Поиск по сайту">
           <button class="form-search__btn" type="submit" name="button">Найти</button>
         </form>
+        <!-- END SEARCH -->
+
+        <!-- USER NAV -->
         <ul class="nav-main__user-nav user-nav-main">
           <li class="user-nav-main__item">
             <a class="user-nav-main__link user-nav-main__link--personal" href="#">Валентин Петухов</a>
@@ -26,6 +33,9 @@
             <a class="user-nav-main__link user-nav-main__link--cart" href="#">Корзина</a>
           </li>
         </ul>
+        <!-- END USER NAV -->
+
+        <!-- SITE NAV -->
         <ul class="nav-main__site-nav site-nav-main">
           <li class="site-nav-main__item item-dropdown">
             <a class="site-nav-main__link item-dropdown__link" href="catalog.html">Каталог</a>
@@ -60,21 +70,40 @@
             <a class="site-nav-main__link" href="contacts.html">Контакты</a>
           </li>
         </ul>
+        <!-- END SITE NAV -->
+
       </nav>
     </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
     <main class="container">
-      <h1>Моноподы для селфи</h1>
+
+      <h1 class="h1">Моноподы для селфи</h1>
+
+      <!-- BREADCRUMBS -->
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог товаров</a></li>
         <li class="breadcrumbs__item">Моноподы для селфи</li>
       </ul>
+      <!-- END BREADCRUMBS -->
+
+      <!-- CATALOG FILTER -->
       <section class="catalog-filter sidebar">
+
         <h2 class="visually-hidden">Фильтр товаров</h2>
+
         <!-- Здесь будет форма -->
+
       </section>
+      <!-- END CATALOG FILTER -->
+
+      <!-- CATALOG SORT -->
       <section class="catalog-sort">
-        <h2>Сортировка:</h2>
+
+        <h2 class="h2">Сортировка:</h2>
+
         <ul class="catalog-sort__list list-sort">
           <li class="list-sort__item">
             <a class="list-sort__link list-sort__link--active" href="#">По цене</a>
@@ -86,6 +115,7 @@
             <a class="list-sort__link" href="#">По популярности</a>
           </li>
         </ul>
+
         <ul class="catalog-sort__order order-sort">
           <li class="order-sort__item">
             <a class="order-sort__link order-sort__link--asc" href="#">По возрастанию</a>
@@ -94,10 +124,18 @@
             <a class="order-sort__link order-sort__link--active order-sort__link--desc" href="#">По убыванию</a>
           </li>
         </ul>
+
       </section>
+      <!-- END CATALOG SORT -->
+
+      <!-- CATALOG -->
       <section class="catalog">
+
         <h2 class="visually-hidden">Список товаров</h2>
+
+        <!-- CATALOG LIST -->
         <ul class="catalog__list">
+
           <li class="catalog__item item-catalog">
             <p class="item-catalog__pic">
               <img src="http://placehold.it/360x380" alt="Любительская селфи-палка" width="360" height="380">
@@ -112,6 +150,7 @@
               <a class="compare" href="#">Добавить к сравнению</a>
             </p>
           </li>
+
           <li class="catalog__item item-catalog">
             <p class="item-catalog__pic">
               <img src="http://placehold.it/360x380" alt="Профессиональная селфи-палка" width="360" height="380">
@@ -126,6 +165,7 @@
               <a class="compare" href="#">Добавить к сравнению</a>
             </p>
           </li>
+
           <li class="catalog__item item-catalog">
             <p class="item-catalog__pic">
               <img src="http://placehold.it/360x380" alt="Непотопляемая селфи-палка" width="360" height="380">
@@ -140,6 +180,7 @@
               <a class="compare" href="#">Добавить к сравнению</a>
             </p>
           </li>
+
           <li class="catalog__item item-catalog">
             <p class="item-catalog__pic">
               <img src="http://placehold.it/360x380" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
@@ -154,7 +195,11 @@
               <a class="compare" href="#">Добавить к сравнению</a>
             </p>
           </li>
+
         </ul>
+        <!-- END CATALOG LIST -->
+
+        <!-- PAGE NAVIGATION -->
         <nav class="catalog__pagination page-nav">
           <ul class="page-nav__list">
             <li class="page-nav__item"><a class="page-nav__link" href="#">Назад</a></li>
@@ -164,11 +209,22 @@
             <li class="page-nav__item"><a class="page-nav__link" href="#">Вперед</a></li>
           </ul>
         </nav>
+        <!-- END PAGE NAVIGATION -->
+
       </section>
+      <!-- END CATALOG -->
+
     </main>
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
     <footer class="main-footer">
+
+      <!-- FOOTER TOP -->
       <div class="main-footer__top">
+
         <a class="main-footer__logo">Device</a>
+
         <ul class="main-footer__user-nav user-nav-footer">
           <li class="user-nav-footer__item">
             <a class="user-nav-footer__link user-nav-footer__link--personal" href="#">Валентин Петухов</a>
@@ -183,11 +239,15 @@
             <a class="user-nav-footer__link user-nav-footer__link--cart" href="#">Корзина</a>
           </li>
         </ul>
+
       </div>
+      <!-- END FOOTER TOP -->
+
+      <!-- FOOTER MIDDLE -->
       <div class="main-footer__middle">
-        <p class="main-footer__address">
-          г. Москва, ул. Строителей, 15
-        </p>
+
+        <p class="main-footer__address">г. Москва, ул. Строителей, 15</p>
+
         <ul class="main-footer__site-nav site-nav-footer">
           <li class="site-nav-footer__item">
             <a class="site-nav-footer__link" href="delivery.html">Доставка</a>
@@ -199,9 +259,15 @@
             <a class="site-nav-footer__link" href="contacts.html">Контакты</a>
           </li>
         </ul>
+
         <p class="main-footer__phone">Тел.: +7 (495) 495-95-95</p>
+
       </div>
+      <!-- END FOOTER MIDDLE -->
+
+      <!-- FOOTER BOTTOM -->
       <div class="main-footer__bottom">
+
         <ul class="main-footer__socials socials-footer">
           <li class="socials-footer__item">
             <a class="socials-footer__link socials-footer__link--facebook" href="#">Facebook</a>
@@ -213,10 +279,15 @@
             <a class="socials-footer__link socials-footer__link--twitter" href="#">Twitter</a>
           </li>
         </ul>
+
         <a class="main-footer__copy" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss">
           HTML Academy
         </a>
+
       </div>
+      <!-- END FOOTER BOTTOM -->
+
     </footer>
+    <!-- END FOOTER -->
   </body>
 </html>
