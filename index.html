@@ -197,15 +197,18 @@
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services__controls controls-services">
           <li class="controls-services__item">
-            <span class="controls-services__btn">Доставка</span>
+            <label class="controls-services__btn" for="services-delivery">Доставка</label>
           </li>
           <li class="controls-services__item">
-            <span class="controls-services__btn">Гарантия</span>
+            <label class="controls-services__btn" for="services-warranty">Гарантия</label>
           </li>
           <li class="controls-services__item">
-            <span class="controls-services__btn">Кредит</span>
+            <label class="controls-services__btn" for="services-credit">Кредит</label>
           </li>
         </ul>
+        <input class="hidden" type="radio" name="services" id="services-delivery" checked>
+        <input class="hidden" type="radio" name="services" id="services-warranty">
+        <input class="hidden" type="radio" name="services" id="services-credit">
         <ul class="services__list">
           <li class="services__item services__item--delivery item-services">
             <h3 class="item-services__title">Доставка</h3>
