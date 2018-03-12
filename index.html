@@ -13,7 +13,8 @@
 
         <!-- SEARCH -->
         <form class="nav-main__search form-search" action="https://echo.htmlacademy.ru" method="post">
-          <input class="form-search__input" type="search" name="search" placeholder="Поиск по сайту">
+          <label class="form-search__label visually-hidden" for="search-query">Поиск по сайту</label>
+          <input class="form-search__input" id="search-query" type="search" name="search" placeholder="Поиск по сайту">
           <button class="form-search__btn" type="submit" name="button">Найти</button>
         </form>
         <!-- END SEARCH -->
@@ -21,13 +22,13 @@
         <!-- USER NAV -->
         <ul class="nav-main__user-nav user-nav-main">
           <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--personal" href="#">Войти</a>
+            <a class="user-nav-main__link user-nav-main__link--personal" href="login.html">Войти</a>
           </li>
           <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--compare" href="#">Сравнить</a>
+            <a class="user-nav-main__link user-nav-main__link--compare" href="compare.html">Сравнить</a>
           </li>
           <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--cart" href="#">Корзина</a>
+            <a class="user-nav-main__link user-nav-main__link--cart" href="cart.html">Корзина</a>
           </li>
         </ul>
         <!-- END USER NAV -->
@@ -183,11 +184,21 @@
 
         </ul>
 
+        <input class="visually-hidden" id="promo-slide-1" type="radio" name="slider-dot" checked>
+        <input class="visually-hidden" id="promo-slide-2" type="radio" name="slider-dot">
+        <input class="visually-hidden" id="promo-slide-3" type="radio" name="slider-dot">
+
         <!-- SLIDER CONTROLS -->
         <ul class="promo-slider__controls controls-slider">
-          <li class="controls-slider__item"><input class="controls-slider__dot" type="radio" name="slider-dot" checked></li>
-          <li class="controls-slider__item"><input class="controls-slider__dot" type="radio" name="slider-dot"></li>
-          <li class="controls-slider__item"><input class="controls-slider__dot" type="radio" name="slider-dot"></li>
+          <li class="controls-slider__item">
+            <label class="controls-slider__dot" for="promo-slide-1">Показать слайд 1</label>
+          </li>
+          <li class="controls-slider__item">
+            <label class="controls-slider__dot" for="promo-slide-2">Показать слайд 2</label>
+          </li>
+          <li class="controls-slider__item">
+            <label class="controls-slider__dot" for="promo-slide-3">Показать слайд 3</label>
+          </li>
         </ul>
         <!-- END SLIDER CONTROLS -->
 
@@ -393,13 +404,13 @@
 
         <ul class="main-footer__user-nav user-nav-footer">
           <li class="user-nav-footer__item">
-            <a class="user-nav-footer__link user-nav-footer__link--personal" href="#">Войти</a>
+            <a class="user-nav-footer__link user-nav-footer__link--personal" href="login.html">Войти</a>
           </li>
           <li class="user-nav-footer__item">
-            <a class="user-nav-footer__link user-nav-footer__link--compare" href="#">Сравнить</a>
+            <a class="user-nav-footer__link user-nav-footer__link--compare" href="compare.html">Сравнить</a>
           </li>
           <li class="user-nav-footer__item">
-            <a class="user-nav-footer__link user-nav-footer__link--cart" href="#">Корзина</a>
+            <a class="user-nav-footer__link user-nav-footer__link--cart" href="cart.html">Корзина</a>
           </li>
         </ul>
 
@@ -454,25 +465,46 @@
     <!-- END FOOTER -->
 
     <!-- MODAL FEEDBACK -->
-    <section class="modal modal--feedback">
+    <section class="modal" tabindex="-1">
 
       <h2 class="visually-hidden">Напишите нам</h2>
 
-      <!-- Здесь будет форма -->
+      <form class="modal__feedback feedback-form" action="https://echo.htmlacademy.ru" method="post">
 
-      <span class="modal__close">x</span>
+        <p class="feedback-form__item">
+          <label class="feedback-form__label" for="feedback-fullname">Ваше имя:</label>
+          <input class="feedback-form__input" id="feedback-fullname" type="text" placeholder="Имя Фамилия">
+        </p>
+
+        <p class="feedback-form__item">
+          <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
+          <input class="feedback-form__input" id="feedback-email" type="email" placeholder="email@example.com">
+        </p>
+
+        <p class="feedback-form__item">
+          <label class="feedback-form__label" for="feedback-text">Текст письма:</label>
+          <textarea class="feedback-form__textarea" id="feedback-text" name="feedback-text" rows="8" cols="80">В свободной форме</textarea>
+        </p>
+
+        <button class="feedback-form__btn" type="submit">Отправить</button>
+
+      </form>
+
+      <button class="modal__close" type="button">Закрыть форму обратной связи</button>
 
     </section>
     <!-- END MODAL FEEDBACK -->
 
     <!-- MODAL MAP -->
-    <section class="modal modal--map">
+    <section class="modal" tabindex="-1">
 
-      <h2 class="visually-hidden">Как проехать</h2>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
 
-      <!-- Здесь будет карта -->
+      <p class="modal__map">
+        <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15, г. Москва">
+      </p>
 
-      <span class="modal__close">x</span>
+      <button class="modal__close" type="button">Закрыть интерактивную карту</button>
 
     </section>
     <!-- END MODAL MAP -->
