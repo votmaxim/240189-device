@@ -14,7 +14,7 @@
         <!-- SEARCH -->
         <form class="nav-main__search form-search" action="https://echo.htmlacademy.ru" method="post">
           <label class="form-search__label visually-hidden" for="search-query">Поиск по сайту</label>
-          <input class="form-search__input" id="search-query" type="search" name="search" placeholder="Поиск по сайту">
+          <input class="form-search__input" id="search-query" type="search" name="search" placeholder="Поиск по сайту" required>
           <button class="form-search__btn" type="submit">Найти</button>
         </form>
         <!-- END SEARCH -->
@@ -477,17 +477,17 @@
 
         <p class="feedback-form__item">
           <label class="feedback-form__label" for="feedback-fullname">Ваше имя:</label>
-          <input class="feedback-form__input" id="feedback-fullname" type="text" placeholder="Имя Фамилия">
+          <input class="feedback-form__input" id="feedback-fullname" type="text" name="fullname" placeholder="Имя Фамилия" required>
         </p>
 
         <p class="feedback-form__item">
           <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
-          <input class="feedback-form__input" id="feedback-email" type="email" placeholder="email@example.com">
+          <input class="feedback-form__input" id="feedback-email" type="email" name="email" placeholder="email@example.com" required>
         </p>
 
         <p class="feedback-form__item">
           <label class="feedback-form__label" for="feedback-text">Текст письма:</label>
-          <textarea class="feedback-form__textarea" id="feedback-text" name="feedback-text" rows="8" cols="80">В свободной форме</textarea>
+          <textarea class="feedback-form__textarea" id="feedback-text" name="feedback-text" placeholder="В свободной форме" rows="8" cols="80" required></textarea>
         </p>
 
         <button class="feedback-form__btn" type="submit">Отправить</button>

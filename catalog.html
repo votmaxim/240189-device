@@ -13,24 +13,25 @@
 
         <!-- SEARCH -->
         <form class="nav-main__search form-search" action="https://echo.htmlacademy.ru" method="post">
-          <input class="form-search__input" type="search" name="search" placeholder="Поиск по сайту">
-          <button class="form-search__btn" type="submit" name="button">Найти</button>
+          <label class="form-search__label visually-hidden" for="search-query">Поиск по сайту</label>
+          <input class="form-search__input" id="search-query" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="form-search__btn" type="submit">Найти</button>
         </form>
         <!-- END SEARCH -->
 
         <!-- USER NAV -->
         <ul class="nav-main__user-nav user-nav-main">
           <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--personal" href="#">Валентин Петухов</a>
+            <a class="user-nav-main__link user-nav-main__link--personal" href="personal.html">Валентин Петухов</a>
           </li>
           <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--logout" href="#">Выйти</a>
+            <a class="user-nav-main__link user-nav-main__link--logout" href="logout.html">Выйти</a>
           </li>
           <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--compare" href="#">Сравнить</a>
+            <a class="user-nav-main__link user-nav-main__link--compare" href="compare.html">Сравнить</a>
           </li>
           <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--cart" href="#">Корзина</a>
+            <a class="user-nav-main__link user-nav-main__link--cart" href="cart.html">Корзина</a>
           </li>
         </ul>
         <!-- END USER NAV -->
@@ -92,9 +93,57 @@
       <!-- CATALOG FILTER -->
       <section class="catalog-filter sidebar">
 
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <h2 class="catalog-filter__title">Фильтр:</h2>
 
-        <!-- Здесь будет форма -->
+        <form class="catalog-filter__form form-filter" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-filter__item">
+            <h3 class="form-filter__title">Стоимость</h3>
+            <div class="form-filter__range range-slider">
+              <div class="range-slider__bar"></div>
+              <button class="range-slider__handle" type="button">От</button>
+              <button class="range-slider__handle" type="button">До</button>
+            </div>
+            <div class="form-filter__range-val range-val">
+              <label class="range-val__label range-val__label--from">От <input class="range-val__input" type="number" name="filter-minprice" value="0"></label>
+              <label class="range-val__label range-val__label--to">До <input class="range-val__input" type="number" name="filter-maxprice" value="50000"></label>
+            </div>
+          </div>
+          <div class="form-filter__item">
+            <h3 class="form-filter__title">Цвет</h3>
+            <p class="form-filter__checkbox checkbox-filter">
+              <label class="checkbox-filter__label" for="filter-black">Черный</label>
+              <input class="checkbox-filter__input visually-hidden" id="filter-black" type="checkbox" name="filter-black" checked>
+            </p>
+            <p class="form-filter__checkbox checkbox-filter">
+              <label class="checkbox-filter__label" for="filter-white">Белый</label>
+              <input class="checkbox-filter__input visually-hidden" id="filter-white" type="checkbox" name="filter-white">
+            </p>
+            <p class="form-filter__checkbox checkbox-filter">
+              <label class="checkbox-filter__label" for="filter-blue">Синий</label>
+              <input class="checkbox-filter__input visually-hidden" id="filter-blue" type="checkbox" name="filter-blue" checked>
+            </p>
+            <p class="form-filter__checkbox checkbox-filter">
+              <label class="checkbox-filter__label" for="filter-red">Красный</label>
+              <input class="checkbox-filter__input visually-hidden" id="filter-red" type="checkbox" name="filter-red" checked>
+            </p>
+            <p class="form-filter__checkbox checkbox-filter">
+              <label class="checkbox-filter__label" for="filter-pink">Розовый</label>
+              <input class="checkbox-filter__input visually-hidden" id="filter-pink" type="checkbox" name="filter-pink">
+            </p>
+          </div>
+          <div class="form-filter__item">
+            <h3 class="form-filter__title">Bluetooth</h3>
+            <p class="form-filter__radio radio-filter">
+              <label class="radio-filter__label" for="filter-bluetooth-true">Есть</label>
+              <input class="radio-filter__input visually-hidden" id="filter-bluetooth-true" type="radio" name="filter-bluetooth" value="true" checked>
+            </p>
+            <p class="form-filter__radio radio-filter">
+              <label class="radio-filter__label" for="filter-bluetooth-false">Нет</label>
+              <input class="radio-filter__input visually-hidden" id="filter-bluetooth-false" type="radio" name="filter-bluetooth" value="false">
+            </p>
+          </div>
+          <button class="form-filter__btn btn" type="submit">Показать</button>
+        </form>
 
       </section>
       <!-- END CATALOG FILTER -->
@@ -102,7 +151,7 @@
       <!-- CATALOG SORT -->
       <section class="catalog-sort">
 
-        <h2 class="h2">Сортировка:</h2>
+        <h2 class="catalog-sort__title">Сортировка:</h2>
 
         <ul class="catalog-sort__list list-sort">
           <li class="list-sort__item">
@@ -227,16 +276,16 @@
 
         <ul class="main-footer__user-nav user-nav-footer">
           <li class="user-nav-footer__item">
-            <a class="user-nav-footer__link user-nav-footer__link--personal" href="#">Валентин Петухов</a>
+            <a class="user-nav-footer__link user-nav-footer__link--personal" href="personal.html">Валентин Петухов</a>
           </li>
           <li class="user-nav-footer__item">
-            <a class="user-nav-footer__link user-nav-footer__link--logout" href="#">Выйти</a>
+            <a class="user-nav-footer__link user-nav-footer__link--logout" href="logout.html">Выйти</a>
           </li>
           <li class="user-nav-footer__item">
-            <a class="user-nav-footer__link user-nav-footer__link--compare" href="#">Сравнить</a>
+            <a class="user-nav-footer__link user-nav-footer__link--compare" href="compare.html">Сравнить</a>
           </li>
           <li class="user-nav-footer__item">
-            <a class="user-nav-footer__link user-nav-footer__link--cart" href="#">Корзина</a>
+            <a class="user-nav-footer__link user-nav-footer__link--cart" href="cart.html">Корзина</a>
           </li>
         </ul>
 
