@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-header__nav nav-main">
 
         <a class="nav-main__logo">Device</a>
@@ -81,12 +81,12 @@
     <!-- END HEADER -->
 
     <!-- MAIN -->
-    <main class="container">
+    <main class="page-main">
 
       <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
 
       <!-- PROMO SLIDER -->
-      <section class="promo-slider">
+      <section class="promo-slider container">
 
         <h2 class="visually-hidden">Рекомендуемые товары</h2>
 
@@ -212,61 +212,61 @@
       <!-- END PROMO SLIDER -->
 
       <!-- CATALOG SECTIONS -->
-      <section class="catalog-sections">
+      <section class="catalog-sections container">
 
         <h2 class="visually-hidden">Разделы каталога</h2>
 
         <ul class="catalog-sections__list">
 
           <li class="catalog-sections__item item-sections">
-            <a class="item-sections__link item-sections__link--vr" href="#">
-              <p class="item-sections__pic">
-                <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+            <a class="item-sections__link" href="#">
+              <p class="item-sections__pic-wrapper">
+                <img class="item-sections__pic" src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
               </p>
               <h3 class="item-sections__title">Виртуальная реальность</h3>
             </a>
           </li>
 
           <li class="catalog-sections__item item-sections">
-            <a class="item-sections__link item-sections__link--monopod" href="#">
-              <p class="item-sections__pic">
-                <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+            <a class="item-sections__link" href="#">
+              <p class="item-sections__pic-wrapper">
+                <img class="item-sections__pic" src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
               </p>
               <h3 class="item-sections__title">Моноподы для селфи</h3>
             </a>
           </li>
 
           <li class="catalog-sections__item item-sections">
-            <a class="item-sections__link item-sections__link--action-cam" href="#">
-              <p class="item-sections__pic">
-                <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+            <a class="item-sections__link" href="#">
+              <p class="item-sections__pic-wrapper">
+                <img class="item-sections__pic" src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
               </p>
               <h3 class="item-sections__title">Экшн-камеры</h3>
             </a>
           </li>
 
           <li class="catalog-sections__item item-sections">
-            <a class="item-sections__link item-sections__link--fitness-bracelet" href="#">
-              <p class="item-sections__pic">
-                <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+            <a class="item-sections__link" href="#">
+              <p class="item-sections__pic-wrapper">
+                <img class="item-sections__pic" src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
               </p>
               <h3 class="item-sections__title">Фитнес-браслеты</h3>
             </a>
           </li>
 
           <li class="catalog-sections__item item-sections">
-            <a class="item-sections__link item-sections__link--smartwatch" href="#">
-              <p class="item-sections__pic">
-                <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+            <a class="item-sections__link" href="#">
+              <p class="item-sections__pic-wrapper">
+                <img class="item-sections__pic" src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
               </p>
               <h3 class="item-sections__title">Умные часы</h3>
             </a>
           </li>
 
           <li class="catalog-sections__item item-sections">
-            <a class="catalog-sections__link catalog-sections__link--qcopter" href="#">
-              <p class="item-sections__pic">
-                <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+            <a class="item-sections__link" href="#">
+              <p class="item-sections__pic-wrapper">
+                <img class="item-sections__pic" src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
               </p>
               <h3 class="item-sections__title">Квадрокоптеры</h3>
             </a>
@@ -281,54 +281,58 @@
 
         <h2 class="visually-hidden">Услуги</h2>
 
-        <!-- SERVICES CONTROLS -->
-        <ul class="services__controls controls-services">
-          <li class="controls-services__item">
-            <label class="controls-services__btn" for="services-delivery">Доставка</label>
-          </li>
-          <li class="controls-services__item">
-            <label class="controls-services__btn" for="services-warranty">Гарантия</label>
-          </li>
-          <li class="controls-services__item">
-            <label class="controls-services__btn" for="services-credit">Кредит</label>
-          </li>
-        </ul>
-        <!-- END SERVICES CONTROLS -->
+        <div class="container">
 
-        <input class="services__input services__input--delivery visually-hidden" type="radio" name="services" id="services-delivery" checked>
-        <input class="services__input services__input--warranty visually-hidden" type="radio" name="services" id="services-warranty">
-        <input class="services__input services__input--credit visually-hidden" type="radio" name="services" id="services-credit">
+          <input class="services__input services__input--delivery visually-hidden" type="radio" name="services" id="services-delivery" checked>
+          <input class="services__input services__input--warranty visually-hidden" type="radio" name="services" id="services-warranty">
+          <input class="services__input services__input--credit visually-hidden" type="radio" name="services" id="services-credit">
 
-        <ul class="services__list">
+          <!-- SERVICES CONTROLS -->
+          <ul class="services__controls controls-services">
+            <li class="controls-services__item">
+              <label class="controls-services__label controls-services__label--delivery btn" for="services-delivery">Доставка</label>
+            </li>
+            <li class="controls-services__item">
+              <label class="controls-services__label controls-services__label--warranty btn" for="services-warranty">Гарантия</label>
+            </li>
+            <li class="controls-services__item">
+              <label class="controls-services__label controls-services__label--credit btn" for="services-credit">Кредит</label>
+            </li>
+          </ul>
+          <!-- END SERVICES CONTROLS -->
 
-          <li class="services__item services__item--delivery item-services">
-            <h3 class="item-services__title">Доставка</h3>
-            <p class="item-services__desc">
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-            </p>
-          </li>
+          <ul class="services__list">
 
-          <li class="services__item services__item--warranty item-services">
-            <h3 class="item-services__title">Гарантия</h3>
-            <p class="item-services__desc">
-              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.
-            </p>
-          </li>
+            <li class="services__item services__item--delivery item-services">
+              <h3 class="item-services__title">Доставка</h3>
+              <p class="item-services__desc">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+              </p>
+            </li>
 
-          <li class="services__item services__item--credit item-services">
-            <h3 class="item-services__title">Кредит</h3>
-            <p class="item-services__desc">
-              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-            </p>
-          </li>
+            <li class="services__item services__item--warranty item-services">
+              <h3 class="item-services__title">Гарантия</h3>
+              <p class="item-services__desc">
+                Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.
+              </p>
+            </li>
 
-        </ul>
+            <li class="services__item services__item--credit item-services">
+              <h3 class="item-services__title">Кредит</h3>
+              <p class="item-services__desc">
+                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
 
       </section>
       <!-- END SERVICES -->
 
       <!-- BRANDS -->
-      <section class="brands">
+      <section class="brands container">
 
         <h2 class="visually-hidden">Бренды</h2>
 
@@ -366,40 +370,44 @@
       </section>
       <!-- END BRANDS -->
 
-      <!-- ABOUT -->
-      <section class="about">
+      <div class="container">
 
-        <h2 class="about__title">О нас</h2>
+        <!-- ABOUT -->
+        <section class="about">
 
-        <p class="about__info">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="about__info">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <h2 class="about__title">О нас</h2>
 
-        <ul class="about__delivery delivery-list">
-          <li class="delivery-list__item">Деловые Линии</li>
-          <li class="delivery-list__item">Автотрейдинг</li>
-          <li class="delivery-list__item">ЖелДорЭкспедиция</li>
-        </ul>
+          <p class="about__info">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="about__info">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 
-        <a class="btn" href="about.html">Подробнее о нас</a>
+          <ul class="about__delivery delivery-list">
+            <li class="delivery-list__item">Деловые Линии</li>
+            <li class="delivery-list__item">Автотрейдинг</li>
+            <li class="delivery-list__item">ЖелДорЭкспедиция</li>
+          </ul>
 
-      </section>
-      <!-- END ABOUT -->
+          <a class="btn" href="about.html">Подробнее о нас</a>
 
-      <!-- CONTACTS -->
-      <section class="contacts">
+        </section>
+        <!-- END ABOUT -->
 
-        <h2 class="contacts__title">Контакты</h2>
+        <!-- CONTACTS -->
+        <section class="contacts">
 
-        <p class="contacts__info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <h2 class="contacts__title">Контакты</h2>
 
-        <p class="contacts__map">
-          <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу ул. Строителей, 15, г. Москва">
-        </p>
+          <p class="contacts__info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
-        <a class="btn" href="#feedback">Напишите нам</a>
+          <p class="contacts__map">
+            <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу ул. Строителей, 15, г. Москва">
+          </p>
 
-      </section>
-      <!-- END CONTACTS -->
+          <a class="btn" href="#feedback">Напишите нам</a>
+
+        </section>
+        <!-- END CONTACTS -->
+
+      </div>
 
     </main>
     <!-- END MAIN -->
@@ -407,69 +415,73 @@
     <!-- FOOTER -->
     <footer class="main-footer">
 
-      <!-- FOOTER TOP -->
-      <div class="main-footer__top">
+      <div class="container">
 
-        <a class="main-footer__logo">Device</a>
+        <!-- FOOTER TOP -->
+        <div class="main-footer__top">
 
-        <ul class="main-footer__user-nav user-nav-footer">
-          <li class="user-nav-footer__item">
-            <a class="user-nav-footer__link user-nav-footer__link--personal" href="login.html">Войти</a>
-          </li>
-          <li class="user-nav-footer__item">
-            <a class="user-nav-footer__link user-nav-footer__link--compare" href="compare.html">Сравнить</a>
-          </li>
-          <li class="user-nav-footer__item">
-            <a class="user-nav-footer__link user-nav-footer__link--cart" href="cart.html">Корзина</a>
-          </li>
-        </ul>
+          <a class="main-footer__logo">Device</a>
+
+          <ul class="main-footer__user-nav user-nav-footer">
+            <li class="user-nav-footer__item">
+              <a class="user-nav-footer__link user-nav-footer__link--personal" href="login.html">Войти</a>
+            </li>
+            <li class="user-nav-footer__item">
+              <a class="user-nav-footer__link user-nav-footer__link--compare" href="compare.html">Сравнить</a>
+            </li>
+            <li class="user-nav-footer__item">
+              <a class="user-nav-footer__link user-nav-footer__link--cart" href="cart.html">Корзина</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- END FOOTER TOP -->
+
+        <!-- FOOTER MIDDLE -->
+        <div class="main-footer__middle">
+
+          <p class="main-footer__address">г. Москва, ул. Строителей, 15</p>
+
+          <ul class="main-footer__site-nav site-nav-footer">
+            <li class="site-nav-footer__item">
+              <a class="site-nav-footer__link" href="delivery.html">Доставка</a>
+            </li>
+            <li class="site-nav-footer__item">
+              <a class="site-nav-footer__link" href="warranty.html">Гарантия</a>
+            </li>
+            <li class="site-nav-footer__item">
+              <a class="site-nav-footer__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+
+          <p class="main-footer__phone">Тел.: +7 (495) 495-95-95</p>
+
+        </div>
+        <!-- END FOOTER MIDDLE -->
+
+        <!-- FOOTER BOTTOM -->
+        <div class="main-footer__bottom">
+
+          <ul class="main-footer__socials socials-footer">
+            <li class="socials-footer__item">
+              <a class="socials-footer__link socials-footer__link--facebook" href="#">Facebook</a>
+            </li>
+            <li class="socials-footer__item">
+              <a class="socials-footer__link socials-footer__link--instagram" href="#">Instagram</a>
+            </li>
+            <li class="socials-footer__item">
+              <a class="socials-footer__link socials-footer__link--twitter" href="#">Twitter</a>
+            </li>
+          </ul>
+
+          <a class="main-footer__copy" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss">
+            HTML Academy
+          </a>
+
+        </div>
+        <!-- END FOOTER BOTTOM -->
 
       </div>
-      <!-- END FOOTER TOP -->
-
-      <!-- FOOTER MIDDLE -->
-      <div class="main-footer__middle">
-
-        <p class="main-footer__address">г. Москва, ул. Строителей, 15</p>
-
-        <ul class="main-footer__site-nav site-nav-footer">
-          <li class="site-nav-footer__item">
-            <a class="site-nav-footer__link" href="delivery.html">Доставка</a>
-          </li>
-          <li class="site-nav-footer__item">
-            <a class="site-nav-footer__link" href="warranty.html">Гарантия</a>
-          </li>
-          <li class="site-nav-footer__item">
-            <a class="site-nav-footer__link" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-
-        <p class="main-footer__phone">Тел.: +7 (495) 495-95-95</p>
-
-      </div>
-      <!-- END FOOTER MIDDLE -->
-
-      <!-- FOOTER BOTTOM -->
-      <div class="main-footer__bottom">
-
-        <ul class="main-footer__socials socials-footer">
-          <li class="socials-footer__item">
-            <a class="socials-footer__link socials-footer__link--facebook" href="#">Facebook</a>
-          </li>
-          <li class="socials-footer__item">
-            <a class="socials-footer__link socials-footer__link--instagram" href="#">Instagram</a>
-          </li>
-          <li class="socials-footer__item">
-            <a class="socials-footer__link socials-footer__link--twitter" href="#">Twitter</a>
-          </li>
-        </ul>
-
-        <a class="main-footer__copy" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss">
-          HTML Academy
-        </a>
-
-      </div>
-      <!-- END FOOTER BOTTOM -->
 
     </footer>
     <!-- END FOOTER -->
@@ -483,12 +495,13 @@
 
         <p class="feedback-form__item">
           <label class="feedback-form__label" for="feedback-fullname">Ваше имя:</label>
-          <input class="feedback-form__input" id="feedback-fullname" type="text" name="fullname" placeholder="Имя Фамилия" required>
+          <input class="feedback-form__input" id="feedback-fullname" type="text" name="fullname" placeholder="Имя Фамилия" value="" required onkeyup="this.setAttribute('value', this.value);">
         </p>
 
         <p class="feedback-form__item">
           <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
-          <input class="feedback-form__input" id="feedback-email" type="email" name="email" placeholder="email@example.com" required>
+          <input class="feedback-form__input" id="feedback-email" type="email" name="email" placeholder="email@example.com" value="" required
+          onkeyup="this.setAttribute('value', this.value);">
         </p>
 
         <p class="feedback-form__item">
@@ -496,11 +509,11 @@
           <textarea class="feedback-form__textarea" id="feedback-text" name="feedback-text" placeholder="В свободной форме" rows="8" cols="80" required></textarea>
         </p>
 
-        <button class="feedback-form__btn" type="submit">Отправить</button>
+        <button class="btn" type="submit">Отправить</button>
 
       </form>
 
-      <button class="modal__close" type="button">Закрыть форму обратной связи</button>
+      <button class="modal__close" type="button" title="Закрыть форму обратной связи"><span class="visually-hidden">Закрыть форму обратной связи</span></button>
 
     </section>
     <!-- END MODAL FEEDBACK -->
@@ -514,7 +527,7 @@
         <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15, г. Москва">
       </p>
 
-      <button class="modal__close" type="button">Закрыть интерактивную карту</button>
+      <button class="modal__close" type="button" title="Закрыть интерактивную карту"><span class="visually-hidden">Закрыть интерактивную карту</span></button>
 
     </section>
     <!-- END MODAL MAP -->
