@@ -264,6 +264,21 @@ html { box-sizing: border-box; }
   color: #000000;
 }
 
+.controls-slider__dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/slider-button-empty.svg");
+  background-size: contain;
+}
+
+.promo-slider__input--1:checked ~ .promo-slider__controls .controls-slider__dot--1,
+.promo-slider__input--2:checked ~ .promo-slider__controls .controls-slider__dot--2,
+.promo-slider__input--3:checked ~ .promo-slider__controls .controls-slider__dot--3 {
+  background-image: url("../img/slider-button.svg");
+}
+
 .item-sections__pic-wrapper {
   background-color: rgba(240, 197, 46, 0.5);
 }
