@@ -271,6 +271,7 @@ html { box-sizing: border-box; }
 
   background-image: url("../img/slider-button-empty.svg");
   background-size: contain;
+  cursor: pointer;
 }
 
 .promo-slider__input--1:checked ~ .promo-slider__controls .controls-slider__dot--1,
