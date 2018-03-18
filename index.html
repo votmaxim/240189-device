@@ -19,60 +19,83 @@
 
         <!-- SEARCH -->
         <form class="nav-main__search form-search" action="https://echo.htmlacademy.ru" method="post">
+
           <label class="form-search__label visually-hidden" for="search-query">Поиск по сайту</label>
+
           <input class="form-search__input" id="search-query" type="search" name="search" placeholder="Поиск по сайту" required>
+
           <button class="form-search__btn" type="submit">Найти</button>
+
         </form>
         <!-- END SEARCH -->
 
         <!-- USER NAV -->
         <ul class="nav-main__user-nav user-nav-main">
+
           <li class="user-nav-main__item">
             <a class="user-nav-main__link user-nav-main__link--personal" href="login.html">Войти</a>
           </li>
+
           <li class="user-nav-main__item">
             <a class="user-nav-main__link user-nav-main__link--compare" href="compare.html">Сравнить</a>
           </li>
+
           <li class="user-nav-main__item">
             <a class="user-nav-main__link user-nav-main__link--cart" href="cart.html">Корзина</a>
           </li>
+
         </ul>
         <!-- END USER NAV -->
 
         <!-- SITE NAV -->
         <ul class="nav-main__site-nav site-nav-main">
+
           <li class="site-nav-main__item item-dropdown">
+
             <a class="site-nav-main__link item-dropdown__link" href="catalog.html">Каталог товаров</a>
+
             <ul class="item-dropdown__list list-dropdown">
+
               <li class="list-dropdown__item">
                 <a class="list-dropdown__link" href="#">Виртуальная реальность</a>
               </li>
+
               <li class="list-dropdown__item">
                 <a class="list-dropdown__link" href="#">Фитнес-браслеты</a>
               </li>
+
               <li class="list-dropdown__item">
                 <a class="list-dropdown__link" href="#">Квадрокоптеры</a>
               </li>
+
               <li class="list-dropdown__item">
                 <a class="list-dropdown__link" href="#">Моноподы для селфи</a>
               </li>
+
               <li class="list-dropdown__item">
                 <a class="list-dropdown__link" href="#">Умные часы</a>
               </li>
+
               <li class="list-dropdown__item">
                 <a class="list-dropdown__link" href="#">Экшн камеры</a>
               </li>
+
             </ul>
+
           </li>
+
           <li class="site-nav-main__item">
             <a class="site-nav-main__link" href="delivery.html">Доставка</a>
           </li>
+
           <li class="site-nav-main__item">
             <a class="site-nav-main__link" href="warranty.html">Гарантия</a>
           </li>
+
           <li class="site-nav-main__item">
             <a class="site-nav-main__link" href="contacts.html">Контакты</a>
           </li>
+
         </ul>
         <!-- END SITE NAV -->
 
@@ -83,7 +106,7 @@
     <!-- MAIN -->
     <main class="page-main">
 
-      <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
+      <h1 class="page-main__heading visually-hidden">Интернет-магазин «Device»</h1>
 
       <!-- PROMO SLIDER -->
       <section class="promo-slider container">
@@ -91,7 +114,9 @@
         <h2 class="visually-hidden">Рекомендуемые товары</h2>
 
         <input class="promo-slider__input promo-slider__input--1 visually-hidden" id="promo-slide-1" type="radio" name="slider-dot" checked>
+
         <input class="promo-slider__input promo-slider__input--2 visually-hidden" id="promo-slide-2" type="radio" name="slider-dot">
+
         <input class="promo-slider__input promo-slider__input--3 visually-hidden" id="promo-slide-3" type="radio" name="slider-dot">
 
         <ul class="promo-slider__list">
@@ -196,15 +221,19 @@
 
         <!-- SLIDER CONTROLS -->
         <ul class="promo-slider__controls controls-slider">
+
           <li class="controls-slider__item">
             <label class="controls-slider__dot" for="promo-slide-1">Показать слайд 1</label>
           </li>
+
           <li class="controls-slider__item">
             <label class="controls-slider__dot" for="promo-slide-2">Показать слайд 2</label>
           </li>
+
           <li class="controls-slider__item">
             <label class="controls-slider__dot" for="promo-slide-3">Показать слайд 3</label>
           </li>
+
         </ul>
         <!-- END SLIDER CONTROLS -->
 
@@ -284,20 +313,26 @@
         <div class="container">
 
           <input class="services__input services__input--delivery visually-hidden" type="radio" name="services" id="services-delivery" checked>
+
           <input class="services__input services__input--warranty visually-hidden" type="radio" name="services" id="services-warranty">
+
           <input class="services__input services__input--credit visually-hidden" type="radio" name="services" id="services-credit">
 
           <!-- SERVICES CONTROLS -->
           <ul class="services__controls controls-services">
+
             <li class="controls-services__item">
               <label class="controls-services__label controls-services__label--delivery btn" for="services-delivery">Доставка</label>
             </li>
+
             <li class="controls-services__item">
               <label class="controls-services__label controls-services__label--warranty btn" for="services-warranty">Гарантия</label>
             </li>
+
             <li class="controls-services__item">
               <label class="controls-services__label controls-services__label--credit btn" for="services-credit">Кредит</label>
             </li>
+
           </ul>
           <!-- END SERVICES CONTROLS -->
 
@@ -339,31 +374,51 @@
         <ul class="brands__list">
 
           <li class="brands__item item-brands">
+
             <a class="item-brands__link" href="#">
+
               <img class="item-brands__pic item-brands__pic--colored" src="img/logo-1.jpg" width="260" height="100" alt="dji">
+
               <img class="item-brands__pic item-brands__pic--grayscaled" src="img/logo-1-gs.jpg" width="260" height="100" alt="dji">
+
             </a>
+
           </li>
 
           <li class="brands__item item-brands">
+
             <a class="item-brands__link" href="#">
+
               <img class="item-brands__pic item-brands__pic--colored" src="img/logo-2.jpg" width="260" height="100" alt="SP GADGETS">
+
               <img class="item-brands__pic item-brands__pic--grayscaled" src="img/logo-2-gs.jpg" width="260" height="100" alt="SP GADGETS">
+
             </a>
+
           </li>
 
           <li class="brands__item item-brands">
+
             <a class="item-brands__link" href="#">
+
               <img class="item-brands__pic item-brands__pic--colored" src="img/logo-3.jpg" width="260" height="100" alt="GoPro">
+
               <img class="item-brands__pic item-brands__pic--grayscaled" src="img/logo-3-gs.jpg" width="260" height="100" alt="GoPro">
+
             </a>
+
           </li>
 
           <li class="brands__item item-brands">
+
             <a class="item-brands__link" href="#">
+
               <img class="item-brands__pic item-brands__pic--colored" src="img/logo-4.jpg" width="260" height="100" alt="VIVE">
+
               <img class="item-brands__pic item-brands__pic--grayscaled" src="img/logo-4-gs.jpg" width="260" height="100" alt="VIVE">
+
             </a>
+
           </li>
 
         </ul>
@@ -423,15 +478,19 @@
           <a class="main-footer__logo">Device</a>
 
           <ul class="main-footer__user-nav user-nav-footer">
+
             <li class="user-nav-footer__item">
               <a class="user-nav-footer__link user-nav-footer__link--personal" href="login.html">Войти</a>
             </li>
+
             <li class="user-nav-footer__item">
               <a class="user-nav-footer__link user-nav-footer__link--compare" href="compare.html">Сравнить</a>
             </li>
+
             <li class="user-nav-footer__item">
               <a class="user-nav-footer__link user-nav-footer__link--cart" href="cart.html">Корзина</a>
             </li>
+
           </ul>
 
         </div>
@@ -443,15 +502,19 @@
           <p class="main-footer__address">г. Москва, ул. Строителей, 15</p>
 
           <ul class="main-footer__site-nav site-nav-footer">
+
             <li class="site-nav-footer__item">
               <a class="site-nav-footer__link" href="delivery.html">Доставка</a>
             </li>
+
             <li class="site-nav-footer__item">
               <a class="site-nav-footer__link" href="warranty.html">Гарантия</a>
             </li>
+
             <li class="site-nav-footer__item">
               <a class="site-nav-footer__link" href="contacts.html">Контакты</a>
             </li>
+
           </ul>
 
           <p class="main-footer__phone">Тел.: +7 (495) 495-95-95</p>
@@ -463,15 +526,19 @@
         <div class="main-footer__bottom">
 
           <ul class="main-footer__socials socials-footer">
+
             <li class="socials-footer__item">
               <a class="socials-footer__link socials-footer__link--facebook" href="#">Facebook</a>
             </li>
+
             <li class="socials-footer__item">
               <a class="socials-footer__link socials-footer__link--instagram" href="#">Instagram</a>
             </li>
+
             <li class="socials-footer__item">
               <a class="socials-footer__link socials-footer__link--twitter" href="#">Twitter</a>
             </li>
+
           </ul>
 
           <a class="main-footer__copy" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -494,26 +561,39 @@
       <form class="modal__feedback feedback-form" action="https://echo.htmlacademy.ru" method="post">
 
         <p class="feedback-form__item">
+
           <label class="feedback-form__label" for="feedback-fullname">Ваше имя:</label>
+
           <input class="feedback-form__input" id="feedback-fullname" type="text" name="fullname" placeholder="Имя Фамилия" value="" required onkeyup="this.setAttribute('value', this.value);">
+
         </p>
 
         <p class="feedback-form__item">
+
           <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
+
           <input class="feedback-form__input" id="feedback-email" type="email" name="email" placeholder="email@example.com" value="" required
           onkeyup="this.setAttribute('value', this.value);">
+
         </p>
 
         <p class="feedback-form__item">
+
           <label class="feedback-form__label" for="feedback-text">Текст письма:</label>
+
           <textarea class="feedback-form__textarea" id="feedback-text" name="feedback-text" placeholder="В свободной форме" rows="8" cols="80" required></textarea>
+
         </p>
 
         <button class="btn" type="submit">Отправить</button>
 
       </form>
 
-      <button class="modal__close" type="button" title="Закрыть форму обратной связи"><span class="visually-hidden">Закрыть форму обратной связи</span></button>
+      <button class="modal__close" type="button" title="Закрыть форму обратной связи">
+        <span class="visually-hidden">
+          Закрыть форму обратной связи
+        </span>
+      </button>
 
     </section>
     <!-- END MODAL FEEDBACK -->
@@ -527,7 +607,11 @@
         <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15, г. Москва">
       </p>
 
-      <button class="modal__close" type="button" title="Закрыть интерактивную карту"><span class="visually-hidden">Закрыть интерактивную карту</span></button>
+      <button class="modal__close" type="button" title="Закрыть интерактивную карту">
+        <span class="visually-hidden">
+          Закрыть интерактивную карту
+        </span>
+      </button>
 
     </section>
     <!-- END MODAL MAP -->
