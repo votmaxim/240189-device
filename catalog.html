@@ -22,7 +22,7 @@
 
           <label class="form-search__label visually-hidden" for="search-query">Поиск по сайту</label>
 
-          <input class="form-search__input" id="search-query" type="search" name="search" placeholder="Поиск по сайту" required>
+            <input class="form-search__input" id="search-query" type="search" name="search" placeholder="Поиск по сайту" value="" required onkeyup="this.setAttribute('value', this.value);" onsearch="this.setAttribute('value', this.value);">
 
           <button class="form-search__btn" type="submit">Найти</button>
 
@@ -40,8 +40,8 @@
             <a class="user-nav-main__link user-nav-main__link--logout" href="logout.html">Выйти</a>
           </li>
 
-          <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--item-catalog__compare" href="item-catalog__compare.html">Сравнить</a>
+          <li class="user-nav-main__item user-nav-main__item--compare">
+            <a class="user-nav-main__link user-nav-main__link--compare" href="compare.html">Сравнить</a>
           </li>
 
           <li class="user-nav-main__item">

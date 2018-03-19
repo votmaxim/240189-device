@@ -12,94 +12,96 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="main-header container">
-      <nav class="main-header__nav nav-main">
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-header__nav nav-main">
 
-        <a class="nav-main__logo">Device</a>
+          <a class="nav-main__logo">Device</a>
 
-        <!-- SEARCH -->
-        <form class="nav-main__search form-search" action="https://echo.htmlacademy.ru" method="post">
+          <!-- SEARCH -->
+          <form class="nav-main__search form-search" action="https://echo.htmlacademy.ru" method="post">
 
-          <label class="form-search__label visually-hidden" for="search-query">Поиск по сайту</label>
+            <label class="form-search__label visually-hidden" for="search-query">Поиск по сайту</label>
 
-          <input class="form-search__input" id="search-query" type="search" name="search" placeholder="Поиск по сайту" required>
+            <input class="form-search__input" id="search-query" type="search" name="search" placeholder="Поиск по сайту" value="" required onkeyup="this.setAttribute('value', this.value);" onsearch="this.setAttribute('value', this.value);">
 
-          <button class="form-search__btn" type="submit">Найти</button>
+            <button class="form-search__btn" type="submit">Найти</button>
 
-        </form>
-        <!-- END SEARCH -->
+          </form>
+          <!-- END SEARCH -->
 
-        <!-- USER NAV -->
-        <ul class="nav-main__user-nav user-nav-main">
+          <!-- USER NAV -->
+          <ul class="nav-main__user-nav user-nav-main">
 
-          <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--personal" href="login.html">Войти</a>
-          </li>
+            <li class="user-nav-main__item">
+              <a class="user-nav-main__link user-nav-main__link--personal" href="login.html">Войти</a>
+            </li>
 
-          <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--compare" href="compare.html">Сравнить</a>
-          </li>
+            <li class="user-nav-main__item user-nav-main__item--compare">
+              <a class="user-nav-main__link user-nav-main__link--compare" href="compare.html">Сравнить</a>
+            </li>
 
-          <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--cart" href="cart.html">Корзина</a>
-          </li>
+            <li class="user-nav-main__item">
+              <a class="user-nav-main__link user-nav-main__link--cart" href="cart.html">Корзина</a>
+            </li>
 
-        </ul>
-        <!-- END USER NAV -->
+          </ul>
+          <!-- END USER NAV -->
 
-        <!-- SITE NAV -->
-        <ul class="nav-main__site-nav site-nav-main">
+          <!-- SITE NAV -->
+          <ul class="nav-main__site-nav site-nav-main">
 
-          <li class="site-nav-main__item item-dropdown">
+            <li class="site-nav-main__item item-dropdown">
 
-            <a class="site-nav-main__link item-dropdown__link" href="catalog.html">Каталог товаров</a>
+              <a class="site-nav-main__link item-dropdown__link" href="catalog.html">Каталог товаров</a>
 
-            <ul class="item-dropdown__list list-dropdown">
+              <ul class="item-dropdown__list list-dropdown">
 
-              <li class="list-dropdown__item">
-                <a class="list-dropdown__link" href="#">Виртуальная реальность</a>
-              </li>
+                <li class="list-dropdown__item">
+                  <a class="list-dropdown__link" href="#">Виртуальная реальность</a>
+                </li>
 
-              <li class="list-dropdown__item">
-                <a class="list-dropdown__link" href="#">Фитнес-браслеты</a>
-              </li>
+                <li class="list-dropdown__item">
+                  <a class="list-dropdown__link" href="#">Фитнес-браслеты</a>
+                </li>
 
-              <li class="list-dropdown__item">
-                <a class="list-dropdown__link" href="#">Квадрокоптеры</a>
-              </li>
+                <li class="list-dropdown__item">
+                  <a class="list-dropdown__link" href="#">Квадрокоптеры</a>
+                </li>
 
-              <li class="list-dropdown__item">
-                <a class="list-dropdown__link" href="#">Моноподы для селфи</a>
-              </li>
+                <li class="list-dropdown__item">
+                  <a class="list-dropdown__link" href="#">Моноподы для селфи</a>
+                </li>
 
-              <li class="list-dropdown__item">
-                <a class="list-dropdown__link" href="#">Умные часы</a>
-              </li>
+                <li class="list-dropdown__item">
+                  <a class="list-dropdown__link" href="#">Умные часы</a>
+                </li>
 
-              <li class="list-dropdown__item">
-                <a class="list-dropdown__link" href="#">Экшн камеры</a>
-              </li>
+                <li class="list-dropdown__item">
+                  <a class="list-dropdown__link" href="#">Экшн камеры</a>
+                </li>
 
-            </ul>
+              </ul>
 
-          </li>
+            </li>
 
-          <li class="site-nav-main__item">
-            <a class="site-nav-main__link" href="delivery.html">Доставка</a>
-          </li>
+            <li class="site-nav-main__item">
+              <a class="site-nav-main__link" href="delivery.html">Доставка</a>
+            </li>
 
-          <li class="site-nav-main__item">
-            <a class="site-nav-main__link" href="warranty.html">Гарантия</a>
-          </li>
+            <li class="site-nav-main__item">
+              <a class="site-nav-main__link" href="warranty.html">Гарантия</a>
+            </li>
 
-          <li class="site-nav-main__item">
-            <a class="site-nav-main__link" href="contacts.html">Контакты</a>
-          </li>
+            <li class="site-nav-main__item">
+              <a class="site-nav-main__link" href="contacts.html">Контакты</a>
+            </li>
 
-        </ul>
-        <!-- END SITE NAV -->
+          </ul>
+          <!-- END SITE NAV -->
 
-      </nav>
+        </nav>
+      </div>
     </header>
     <!-- END HEADER -->
 
