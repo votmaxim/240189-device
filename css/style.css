@@ -564,6 +564,7 @@ html { box-sizing: border-box; }
 
 .services {
   position: relative;
+  min-width: 1200px;
   min-height: 388px;
   padding-top: 100px;
   padding-bottom: 70px;
@@ -579,21 +580,26 @@ html { box-sizing: border-box; }
   height: 100px;
 
   background-color: #ffffff;
-}
-
-.services__controls,
-.services__list {
-  margin: 0;
-  padding: 0;
+  z-index: 10;
 }
 
 .services__controls {
-  width: 280px;
-  margin-right: 120px;
+  width: 277px;
+  margin-top: -100px;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding: 80px 0 50px;
+  z-index: 20;
+
+  border-right: 7px solid #000000;
 }
 
 .services__list {
-  width: 760px;
+  width: 756px;
+  margin-top: -100px;
+  padding-top: 70px;
+  padding-left: 0;
+  z-index: 20;
 }
 
 .controls-services__item {
@@ -687,6 +693,17 @@ html { box-sizing: border-box; }
   width: 500px;
 }
 
+.about__info,
+.contacts__info {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.about__delivery {
+  margin: 70px 0 62px;
+  padding: 0;
+  list-style: none;
+}
+
 .delivery-list__item {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
@@ -700,9 +717,14 @@ html { box-sizing: border-box; }
   margin-left: auto;
 }
 
+.contacts__map {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
 .about,
 .contacts {
-  margin-bottom: 82px;
+  margin-bottom: 80px;
 }
 
 .page-main__heading {
@@ -988,6 +1010,11 @@ html { box-sizing: border-box; }
 .main-footer__middle,
 .main-footer__bottom {
   display: flex;
+  align-items: center;
+}
+
+.main-footer__top {
+  margin-bottom: 30px;
 }
 
 .main-footer__logo {
@@ -1040,6 +1067,7 @@ html { box-sizing: border-box; }
 }
 
 .main-footer__middle {
+  margin-bottom: 60px;
   justify-content: space-between;
 }
 
@@ -1072,6 +1100,7 @@ html { box-sizing: border-box; }
   content: "";
   width: 80px;
   height: 7px;
+  align-self: flex-end;
 
   background-color: #ffc600;
 }
@@ -1085,6 +1114,10 @@ html { box-sizing: border-box; }
   display: flex;
   margin: 0 auto;
   padding: 0;
+}
+
+.socials-footer__item {
+  margin-left: 20px;
 }
 
 .user-nav-footer__link:focus,
