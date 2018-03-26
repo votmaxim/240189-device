@@ -20,43 +20,45 @@
         <!-- SEARCH -->
         <form class="nav-main__search form-search" action="https://echo.htmlacademy.ru" method="post">
 
-          <label class="form-search__label visually-hidden" for="search-query">Поиск по сайту</label>
+          <label class="form-search__label" for="search-query">
+            <span class="visually-hidden">Поиск по сайту</span>
+          </label>
 
-            <input class="form-search__input" id="search-query" type="search" name="search" placeholder="Поиск по сайту" value="" required onkeyup="this.setAttribute('value', this.value);" onsearch="this.setAttribute('value', this.value);">
+          <input class="form-search__input" id="search-query" type="search" name="search" placeholder="Поиск по сайту" required>
 
-          <button class="form-search__btn" type="submit">Найти</button>
+          <button class="form-search__btn form-search__btn--hidden" type="submit">Найти</button>
 
         </form>
         <!-- END SEARCH -->
 
         <!-- USER NAV -->
-        <ul class="nav-main__user-nav user-nav-main">
+        <ul class="nav-main__user user-nav">
 
-          <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--personal" href="personal.html">Валентин Петухов</a>
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--personal" href="personal.html">Валентин Петухов</a>
           </li>
 
-          <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--logout" href="logout.html">Выйти</a>
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--logout" href="logout.html">Выйти</a>
           </li>
 
-          <li class="user-nav-main__item user-nav-main__item--compare">
-            <a class="user-nav-main__link user-nav-main__link--compare" href="compare.html">Сравнить</a>
+          <li class="user-nav__item user-nav__item--compare">
+            <a class="user-nav__link user-nav__link--compare" href="compare.html">Сравнить</a>
           </li>
 
-          <li class="user-nav-main__item">
-            <a class="user-nav-main__link user-nav-main__link--cart" href="cart.html">Корзина</a>
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--cart" href="cart.html">Корзина</a>
           </li>
 
         </ul>
         <!-- END USER NAV -->
 
         <!-- SITE NAV -->
-        <ul class="nav-main__site-nav site-nav-main">
+        <ul class="nav-main__site site-nav">
 
-          <li class="site-nav-main__item item-dropdown">
+          <li class="site-nav__item item-dropdown">
 
-            <a class="site-nav-main__link item-dropdown__link" href="catalog.html">Каталог товаров</a>
+            <a class="site-nav__link item-dropdown__link" href="catalog.html">Каталог товаров</a>
 
             <div class="item-dropdown__container">
 
@@ -92,16 +94,16 @@
 
           </li>
 
-          <li class="site-nav-main__item">
-            <a class="site-nav-main__link" href="delivery.html">Доставка</a>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="delivery.html">Доставка</a>
           </li>
 
-          <li class="site-nav-main__item">
-            <a class="site-nav-main__link" href="warranty.html">Гарантия</a>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="warranty.html">Гарантия</a>
           </li>
 
-          <li class="site-nav-main__item">
-            <a class="site-nav-main__link" href="contacts.html">Контакты</a>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
           </li>
 
         </ul>
@@ -142,7 +144,7 @@
 
       </div>
 
-      <div class="container-fluid">
+      <div class="container-fluid d-flex">
 
         <div class="page-main__sidebar">
 
@@ -153,7 +155,7 @@
 
               <form class="catalog-filter__form form-filter" action="https://echo.htmlacademy.ru" method="post">
 
-                <div class="form-filter__item">
+                <div class="form-filter__item form-filter__item--range">
 
                   <h3 class="form-filter__title">Стоимость</h3>
 
@@ -178,14 +180,14 @@
                     </label>
 
                     <label class="range-val__label range-val__label--to">
-                      До <input class="range-val__input" type="number" name="filter-maxprice" value="50000" readonly>
+                      До <input class="range-val__input" type="number" name="filter-maxprice" value="5000" readonly>
                     </label>
 
                   </div>
 
                 </div>
 
-                <div class="form-filter__item">
+                <div class="form-filter__item form-filter__item--checkbox">
 
                   <h3 class="form-filter__title">Цвет</h3>
 
@@ -298,7 +300,7 @@
                   <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
 
                   <p class="item-catalog__controls">
-                    <a class="btn" href="#">В корзину</a>
+                    <a class="item-catalog__btn btn" href="#">В корзину</a>
                     <a class="item-catalog__compare" href="#">Добавить к сравнению</a>
                   </p>
 
@@ -309,7 +311,7 @@
                 <div class="item-catalog__info">
 
                   <a class="item-catalog__link" href="#">
-                    <h3 class="item-catalog__title">Любительская селфи-палка</h3>
+                    <h3 class="item-catalog__title">Любительская <span class="nowrap">селфи-палка</span></h3>
                   </a>
 
                   <span class="item-catalog__price">500 руб.</span>
@@ -327,7 +329,7 @@
                   <span class="item-catalog__label visually-hidden">New</span>
 
                   <p class="item-catalog__controls">
-                    <a class="btn" href="#">В корзину</a>
+                    <a class="item-catalog__btn btn" href="#">В корзину</a>
                     <a class="item-catalog__compare" href="#">Добавить к сравнению</a>
                   </p>
 
@@ -336,7 +338,7 @@
                 <div class="item-catalog__info">
 
                   <a class="item-catalog__link" href="#">
-                    <h3 class="item-catalog__title">Профессиональная селфи-палка</h3>
+                    <h3 class="item-catalog__title">Профессиональная <span class="nowrap">селфи-палка</span></h3>
                   </a>
 
                   <span class="item-catalog__price">1500 руб.</span>
@@ -354,7 +356,7 @@
                   <span class="item-catalog__label visually-hidden">New</span>
 
                   <p class="item-catalog__controls">
-                    <a class="btn" href="#">В корзину</a>
+                    <a class="item-catalog__btn btn" href="#">В корзину</a>
                     <a class="item-catalog__compare" href="#">Добавить к сравнению</a>
                   </p>
 
@@ -363,7 +365,7 @@
                 <div class="item-catalog__info">
 
                   <a class="item-catalog__link" href="#">
-                    <h3 class="item-catalog__title">Непотопляемая селфи-палка</h3>
+                    <h3 class="item-catalog__title">Непотопляемая <span class="nowrap">селфи-палка</span></h3>
                   </a>
 
                   <span class="item-catalog__price">2500 руб.</span>
@@ -382,7 +384,7 @@
                   <span class="item-catalog__label">New</span>
 
                   <p class="item-catalog__controls">
-                    <a class="btn" href="#">В корзину</a>
+                    <a class="item-catalog__btn btn" href="#">В корзину</a>
                     <a class="item-catalog__compare" href="#">Добавить к сравнению</a>
                   </p>
 
@@ -392,7 +394,7 @@
                 <div class="item-catalog__info">
 
                   <a class="item-catalog__link" href="#">
-                  <h3 class="item-catalog__title">Селфи-палка «Следуй за мной»</h3>
+                  <h3 class="item-catalog__title"><span class="nowrap">Селфи-палка</span> «Следуй за мной»</h3>
                 </a>
 
                 <span class="item-catalog__price">4900 руб.</span>
@@ -509,21 +511,27 @@
           <ul class="main-footer__socials socials-footer">
 
             <li class="socials-footer__item">
-              <a class="socials-footer__link socials-footer__link--facebook" href="#">Facebook</a>
+              <a class="socials-footer__link socials-footer__link--facebook" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
             </li>
 
             <li class="socials-footer__item">
-              <a class="socials-footer__link socials-footer__link--instagram" href="#">Instagram</a>
+              <a class="socials-footer__link socials-footer__link--instagram" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
             </li>
 
             <li class="socials-footer__item">
-              <a class="socials-footer__link socials-footer__link--twitter" href="#">Twitter</a>
+              <a class="socials-footer__link socials-footer__link--twitter" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
             </li>
 
           </ul>
 
-          <a class="main-footer__copy" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss">
-            HTML Academy
+          <a class="main-footer__copy" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss" title="html academy">
+            <span class="visually-hidden">HTML Academy</span>
           </a>
 
         </div>

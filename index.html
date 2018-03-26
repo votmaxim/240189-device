@@ -21,39 +21,41 @@
           <!-- SEARCH -->
           <form class="nav-main__search form-search" action="https://echo.htmlacademy.ru" method="post">
 
-            <label class="form-search__label visually-hidden" for="search-query">Поиск по сайту</label>
+            <label class="form-search__label" for="search-query">
+              <span class="visually-hidden">Поиск по сайту</span>
+            </label>
 
-            <input class="form-search__input" id="search-query" type="search" name="search" placeholder="Поиск по сайту" value="" required onkeyup="this.setAttribute('value', this.value);" onsearch="this.setAttribute('value', this.value);">
+            <input class="form-search__input" id="search-query" type="search" name="search" placeholder="Поиск по сайту" required>
 
-            <button class="form-search__btn" type="submit">Найти</button>
+            <button class="form-search__btn form-search__btn--hidden" type="submit">Найти</button>
 
           </form>
           <!-- END SEARCH -->
 
           <!-- USER NAV -->
-          <ul class="nav-main__user-nav user-nav-main">
+          <ul class="nav-main__user user-nav">
 
-            <li class="user-nav-main__item">
-              <a class="user-nav-main__link user-nav-main__link--personal" href="login.html">Войти</a>
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--personal" href="login.html">Войти</a>
             </li>
 
-            <li class="user-nav-main__item user-nav-main__item--compare">
-              <a class="user-nav-main__link user-nav-main__link--compare" href="compare.html">Сравнить</a>
+            <li class="user-nav__item user-nav__item--compare">
+              <a class="user-nav__link user-nav__link--compare" href="compare.html">Сравнить</a>
             </li>
 
-            <li class="user-nav-main__item">
-              <a class="user-nav-main__link user-nav-main__link--cart" href="cart.html">Корзина</a>
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--cart" href="cart.html">Корзина</a>
             </li>
 
           </ul>
           <!-- END USER NAV -->
 
           <!-- SITE NAV -->
-          <ul class="nav-main__site-nav site-nav-main">
+          <ul class="nav-main__site site-nav">
 
-            <li class="site-nav-main__item item-dropdown">
+            <li class="site-nav__item item-dropdown">
 
-              <a class="site-nav-main__link item-dropdown__link" href="catalog.html">Каталог товаров</a>
+              <a class="site-nav__link item-dropdown__link" href="catalog.html">Каталог товаров</a>
 
               <div class="item-dropdown__container">
 
@@ -89,16 +91,16 @@
 
             </li>
 
-            <li class="site-nav-main__item">
-              <a class="site-nav-main__link" href="delivery.html">Доставка</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="delivery.html">Доставка</a>
             </li>
 
-            <li class="site-nav-main__item">
-              <a class="site-nav-main__link" href="warranty.html">Гарантия</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="warranty.html">Гарантия</a>
             </li>
 
-            <li class="site-nav-main__item">
-              <a class="site-nav-main__link" href="contacts.html">Контакты</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
             </li>
 
           </ul>
@@ -149,14 +151,14 @@
 
               <table class="item-slider__props props-slider">
                 <tr>
-                  <th class="props-slider__title">Длина палки</th>
-                  <th class="props-slider__title">Вес палки</th>
-                  <th class="props-slider__title">Материал</th>
-                </tr>
-                <tr>
                   <td class="props-slider__value">8,5 м</td>
                   <td class="props-slider__value">5 кг</td>
                   <td class="props-slider__value">Карбон</td>
+                </tr>
+                <tr>
+                  <th class="props-slider__title">Длина палки</th>
+                  <th class="props-slider__title">Вес палки</th>
+                  <th class="props-slider__title">Материал</th>
                 </tr>
               </table>
             </div>
@@ -186,10 +188,10 @@
 
               <table class="item-slider__props props-slider">
                 <tr>
-                  <th class="props-slider__title">Без подзарядки</th>
+                  <td class="props-slider__value">48 часов</td>
                 </tr>
                 <tr>
-                  <td class="props-slider__value">48 часов</td>
+                  <th class="props-slider__title">Без подзарядки</th>
                 </tr>
               </table>
 
@@ -220,12 +222,12 @@
 
               <table class="item-slider__props props-slider">
                 <tr>
-                  <th class="props-slider__title">Дальность полета</th>
-                  <th class="props-slider__title">Радиус поражения</th>
-                </tr>
-                <tr>
                   <td class="props-slider__value">800 м</td>
                   <td class="props-slider__value">50 м</td>
+                </tr>
+                <tr>
+                  <th class="props-slider__title">Дальность полета</th>
+                  <th class="props-slider__title">Радиус поражения</th>
                 </tr>
               </table>
 
@@ -278,7 +280,7 @@
               <p class="item-sections__pic-wrapper">
                 <img class="item-sections__pic item-sections__pic--bottom" src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
               </p>
-              <h3 class="item-sections__title">Моноподы для селфи</h3>
+              <h3 class="item-sections__title">Моноподы <br> для селфи</h3>
             </a>
           </li>
 
@@ -338,16 +340,16 @@
           <!-- SERVICES CONTROLS -->
           <ul class="services__controls controls-services">
 
-            <li class="controls-services__item controls-services__item--delivery">
-              <label class="controls-services__label btn" for="services-delivery">Доставка</label>
+            <li class="controls-services__item">
+              <label class="controls-services__label controls-services__label--delivery btn" for="services-delivery">Доставка</label>
             </li>
 
-            <li class="controls-services__item controls-services__item--warranty">
-              <label class="controls-services__label btn" for="services-warranty">Гарантия</label>
+            <li class="controls-services__item">
+              <label class="controls-services__label controls-services__label--warranty btn" for="services-warranty">Гарантия</label>
             </li>
 
-            <li class="controls-services__item controls-services__item--credit">
-              <label class="controls-services__label btn" for="services-credit">Кредит</label>
+            <li class="controls-services__item">
+              <label class="controls-services__label controls-services__label--credit btn" for="services-credit">Кредит</label>
             </li>
 
           </ul>
@@ -458,7 +460,7 @@
             <li class="delivery-list__item">ЖелДорЭкспедиция</li>
           </ul>
 
-          <a class="btn" href="about.html">Подробнее о нас</a>
+          <a class="about__btn btn" href="about.html">Подробнее о нас</a>
 
         </section>
         <!-- END ABOUT -->
@@ -545,21 +547,27 @@
           <ul class="main-footer__socials socials-footer">
 
             <li class="socials-footer__item">
-              <a class="socials-footer__link socials-footer__link--facebook" href="#">Facebook</a>
+              <a class="socials-footer__link socials-footer__link--facebook" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
             </li>
 
             <li class="socials-footer__item">
-              <a class="socials-footer__link socials-footer__link--instagram" href="#">Instagram</a>
+              <a class="socials-footer__link socials-footer__link--instagram" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
             </li>
 
             <li class="socials-footer__item">
-              <a class="socials-footer__link socials-footer__link--twitter" href="#">Twitter</a>
+              <a class="socials-footer__link socials-footer__link--twitter" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
             </li>
 
           </ul>
 
-          <a class="main-footer__copy" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss">
-            HTML Academy
+          <a class="main-footer__copy" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss" title="html academy">
+            <span class="visually-hidden">HTML Academy</span>
           </a>
 
         </div>
@@ -571,34 +579,34 @@
     <!-- END FOOTER -->
 
     <!-- MODAL FEEDBACK -->
-    <section class="modal" tabindex="-1">
+    <section class="modal modal-feedback" tabindex="-1">
 
       <h2 class="visually-hidden">Напишите нам</h2>
 
-      <form class="modal__feedback feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="modal-feedback__form form-feedback" action="https://echo.htmlacademy.ru" method="post">
 
-        <p class="feedback-form__item">
+        <p class="form-feedback__item">
 
-          <label class="feedback-form__label" for="feedback-fullname">Ваше имя:</label>
+          <label class="form-feedback__label" for="feedback-fullname">Ваше имя:</label>
 
-          <input class="feedback-form__input" id="feedback-fullname" type="text" name="fullname" placeholder="Имя Фамилия" value="" required onkeyup="this.setAttribute('value', this.value);">
+          <input class="form-feedback__input" id="feedback-fullname" type="text" name="fullname" placeholder="Имя Фамилия" value="" required onkeyup="this.setAttribute('value', this.value);">
 
         </p>
 
-        <p class="feedback-form__item">
+        <p class="form-feedback__item">
 
-          <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
+          <label class="form-feedback__label" for="feedback-email">Ваш e-mail:</label>
 
-          <input class="feedback-form__input" id="feedback-email" type="email" name="email" placeholder="email@example.com" value="" required
+          <input class="form-feedback__input" id="feedback-email" type="email" name="email" placeholder="email@example.com" value="" required
           onkeyup="this.setAttribute('value', this.value);">
 
         </p>
 
-        <p class="feedback-form__item">
+        <p class="form-feedback__item">
 
-          <label class="feedback-form__label" for="feedback-text">Текст письма:</label>
+          <label class="form-feedback__label" for="feedback-text">Текст письма:</label>
 
-          <textarea class="feedback-form__textarea" id="feedback-text" name="feedback-text" placeholder="В свободной форме" rows="8" cols="80" required></textarea>
+          <textarea class="form-feedback__textarea" id="feedback-text" name="feedback-text" placeholder="В свободной форме" rows="8" cols="80" required></textarea>
 
         </p>
 
@@ -616,11 +624,11 @@
     <!-- END MODAL FEEDBACK -->
 
     <!-- MODAL MAP -->
-    <section class="modal" tabindex="-1">
+    <section class="modal modal-map" tabindex="-1">
 
       <h2 class="visually-hidden">Как до нас добраться</h2>
 
-      <p class="modal__map">
+      <p class="modal-map__warapper">
         <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15, г. Москва">
       </p>
 
