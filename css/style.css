@@ -17,6 +17,7 @@
 /* GLOBAL */
 
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -819,7 +820,6 @@ input[type="radio"].visually-hidden {
 .services {
   position: relative;
 
-  min-width: 1200px;
   min-height: 388px;
   padding-top: 100px;
   padding-bottom: 66px;
