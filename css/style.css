@@ -741,6 +741,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/slider-button-empty.svg");
   background-size: contain;
 
+  vertical-align: baseline;
   cursor: pointer;
 }
 
@@ -861,6 +862,7 @@ input[type="radio"].visually-hidden {
   min-width: 160px;
   padding: 8px 23px;
 
+  vertical-align: baseline;
   text-align: center;
 }
 
@@ -968,6 +970,8 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   display: inline-block;
+
+  vertical-align: baseline;
 }
 
 .item-brands__pic {
