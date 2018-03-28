@@ -720,10 +720,6 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.promo-slider__input:focus ~ .promo-slider__controls {
-  outline: 3px solid #f0c52e;
-}
-
 .controls-slider__item {
   display: inline-block;
 
@@ -750,6 +746,14 @@ input[type="radio"].visually-hidden {
 .promo-slider__input--2:checked ~ .promo-slider__controls .controls-slider__dot--2,
 .promo-slider__input--3:checked ~ .promo-slider__controls .controls-slider__dot--3 {
   background-image: url("../img/slider-button.svg");
+}
+
+.promo-slider__input--1:focus ~ .promo-slider__controls .controls-slider__dot--1,
+.promo-slider__input--2:focus ~ .promo-slider__controls .controls-slider__dot--2,
+.promo-slider__input--3:focus ~ .promo-slider__controls .controls-slider__dot--3 {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .catalog-sections {
@@ -864,6 +868,14 @@ input[type="radio"].visually-hidden {
 
   vertical-align: baseline;
   text-align: center;
+}
+
+.services__input--delivery:focus ~ .services__controls .controls-services__label--delivery,
+.services__input--warranty:focus ~ .services__controls .controls-services__label--warranty,
+.services__input--credit:focus ~ .services__controls .controls-services__label--credit {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .services__input--delivery:checked ~ .services__controls .controls-services__label--delivery,
@@ -1390,6 +1402,12 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-on.svg");
 }
 
+.checkbox-filter__input:focus + .checkbox-filter__label::before {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focusring-color;
+}
+
 .checkbox-filter__label:focus::before,
 .checkbox-filter__label:hover::before,
 .radio-filter__label:focus::before,
@@ -1432,6 +1450,13 @@ input[type="radio"].visually-hidden {
 
 .radio-filter__input:checked + .radio-filter__label::before {
   background-image: url("../img/radio-on.svg");
+}
+
+.radio-filter__input:focus + .radio-filter__label::before {
+  border-color: #663d15;
+  border-radius: 50%;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focusring-color;
 }
 
 .catalog-sort {
@@ -2080,10 +2105,10 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
-  position: absolute;
-  top: 1852px;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   z-index: 99;
 
   display: none;
