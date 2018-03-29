@@ -472,11 +472,13 @@
 
           <p class="contacts__info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
-          <p class="contacts__map">
-            <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу ул. Строителей, 15, г. Москва">
+          <p class="contacts__map map-contacts">
+            <a href="#map" class="map-contacts__link" title="Как добраться">
+              <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу ул. Строителей, 15, г. Москва">
+            </a>
           </p>
 
-          <a class="btn" href="#feedback">Напишите нам</a>
+          <a class="contacts__link-feedback btn" href="#feedback">Напишите нам</a>
 
         </section>
         <!-- END CONTACTS -->
@@ -589,7 +591,7 @@
 
           <label class="form-feedback__label" for="feedback-fullname">Ваше имя:</label>
 
-          <input class="form-feedback__input" id="feedback-fullname" type="text" name="fullname" placeholder="Имя Фамилия" value="" required onkeyup="this.setAttribute('value', this.value);">
+          <input class="form-feedback__input" id="feedback-fullname" type="text" name="fullname" placeholder="Имя Фамилия">
 
         </p>
 
@@ -597,8 +599,7 @@
 
           <label class="form-feedback__label" for="feedback-email">Ваш e-mail:</label>
 
-          <input class="form-feedback__input" id="feedback-email" type="email" name="email" placeholder="email@example.com" value="" required
-          onkeyup="this.setAttribute('value', this.value);">
+          <input class="form-feedback__input" id="feedback-email" type="email" name="email" placeholder="email@example.com" value="">
 
         </p>
 
@@ -606,7 +607,7 @@
 
           <label class="form-feedback__label" for="feedback-text">Текст письма:</label>
 
-          <textarea class="form-feedback__textarea" id="feedback-text" name="feedback-text" placeholder="В свободной форме" rows="8" cols="80" required></textarea>
+          <textarea class="form-feedback__textarea" id="feedback-text" name="feedback-text" placeholder="В свободной форме" rows="8" cols="80"></textarea>
 
         </p>
 
@@ -628,8 +629,10 @@
 
       <h2 class="visually-hidden">Как до нас добраться</h2>
 
-      <p class="modal-map__warapper">
-        <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15, г. Москва">
+      <iframe class="modal-map__iframe" src="https://yandex.ru/map-widget/v1/-/CBe~uDem3B" width="960" height="560" frameborder="0"></iframe>
+
+      <p class="modal-map__wrapper">
+        <img src="img/map-big.jpg" width="960" height="560" alt="Офис компании по адресу ул. Строителей, 15, г. Москва">
       </p>
 
       <button class="modal__close" type="button" title="Закрыть интерактивную карту">
@@ -640,5 +643,7 @@
 
     </section>
     <!-- END MODAL MAP -->
+
+    <script src="js/script.js"></script>
   </body>
 </html>

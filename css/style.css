@@ -2118,10 +2118,6 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2)
 }
 
-.modal.show {
-  display: block;
-}
-
 .modal-feedback__form {
   display: flex;
   flex-wrap: wrap;
@@ -2210,8 +2206,24 @@ input[type="radio"].visually-hidden {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.modal-map__warapper {
-  max-height: 559px;
+.modal-map {
+  max-height: 560px;
+}
+
+.modal-map__iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
+.modal-map__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  max-height: 560px;
   margin: 0;
   padding: 0;
 }
@@ -2220,6 +2232,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 22px;
   right: 22px;
+  z-index: 99;
 
   width: 55px;
   height: 55px;
@@ -2240,4 +2253,54 @@ input[type="radio"].visually-hidden {
 
 .modal__close:active {
   opacity: 0.3;
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    margin-top: -2000px;
+  }
+
+  70% {
+    margin-top: 30px;
+  }
+
+  90% {
+    margin-top: -10px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    margin-left: 0;
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    margin-left: -10px;
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    margin-left: 10px;
+  }
 }
