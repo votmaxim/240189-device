@@ -2083,6 +2083,11 @@ input[type="radio"].visually-hidden {
   text-align: right;
 }
 
+.main-footer__tel-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .main-footer__bottom {
   position: relative;
 
